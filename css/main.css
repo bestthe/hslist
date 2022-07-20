@@ -2,3 +2,45 @@
     padding: 0;
     margin: 0;
 }
+a{
+    text-decoration: none;
+}
+ul{
+    list-style: none;
+}
+#wrap{
+    width: 300px;
+    background-color: #333;
+    text-align: center;
+}
+#wrap h1 a{
+    display: block;
+    line-height: 100px;
+    color: #fff;
+}
+#wrap nav .depth01 > li{
+    position: relative;
+}
+#wrap nav .depth01 > li > a{
+    display: block;
+    line-height: 50px;
+    color: #fff;
+    border-top: 1px solid #fff;
+}
+#wrap .depth02{
+    position: absolute;
+    width: 100%;
+    left: 100%;
+    top: 0;
+    background-color: #ccc;
+    display: none;
+}
+#wrap .depth02 li a{
+    display: block;
+    line-height: 50px;
+    border-top: 1px solid #000;
+    color: #000;
+}
+#wrap nav .depth01 li:hover .depth02{
+    display: block;
+}
