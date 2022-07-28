@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form action="./ssc.html">
+        <fieldset>
+            <legend>회원가입</legend>
+            <!-- maxlength는 최대 쓸 수 있는 글자의수  placeholder는 해당 란의 보조설명을 쓰는 명령어 -->
+            <p>
+                <span>이름 : </span>
+                <input type="text" placeholder="한글로 입력해주세요" name="name" maxlength="6" required autofocus>
+                <!-- required는 필수입력란 설정, autofocus는 시작점을 설정 해주는것 -->
+            </p>
+            <p>
+                <span>아이디 : </span>
+                <input type="text" placeholder="영문 및 숫자 조합만 가능" name="ID" maxlength="15" required>
+            </p>
+            <p>
+                <span>비밀번호 : </span>
+                <input type="password" placeholder="영문 및 숫자 조합만 가능" name="PW" maxlength="15" required>
+            </p>
+            <p>
+                <!-- id와 for을 다르게 해주어야 중복체크가 불가능해진다. -->
+                <span>성별 : </span>
+                <input type="radio" name="gender" id="man" checked>
+                <label for="man">남자</label>
+                <input type="radio" name="gender" id="woman">
+                <label for="woman">여자</label>
+                <input type="radio" name="gender" id="nocoment">
+                <label for="nocoment">밝히고 싶지않음</label>
+            </p>
+            <p>
+                <!-- id와 for은 동일하게하지만 다른메뉴도 동일하게하면 안된다. -->
+                <!-- checked는 페이지에 왔을 때 체크가 미리 되있는 곳을 설정하는 명령어 -->
+                <span>관심사 : </span>
+                <input type="checkbox" id="fav_01" value="fav-1" name="fav_01" checked>
+                <label for="fav_01">사회</label>
+                <input type="checkbox" id="fav_02" value="fav-2" name="fav_02">
+                <label for="fav_02">경제</label>
+                <input type="checkbox" id="fav_03" value="fav-3" name="fav_03">
+                <label for="fav_03">IT</label>
+                <input type="checkbox" id="fav_04" value="fav-4" name="fav_04">
+                <label for="fav_04">연예</label>
+            </p>
+            <p>
+                <span>증명사진 : </span>
+                <input type="file" name="img_file">
+            </p>
+            <p>
+                <span>생년월일 : </span>
+                <input type="date" name="date" min="2020-01-01" max="2022-12-31" step="1">
+            </p>
+            <p>
+                <span>연령대 : </span>
+                <input type="number" name="number" min="10" max="80" step="10" placeholder="10">
+            </p>
+            <p>
+                <span>선호컬러 : </span>
+                <input type="color" name="color">
+                <input type="color" name="color">
+                <input type="color" name="color">
+            </p>
+            <p>
+                <span>지역선택 : </span>
+                <select name="city" id="">
+                    <!-- optgroup은 그룹을 나누고 label은 대제목을 적는곳 -->
+                    <optgroup label="서울시">
+                        <option value="gamnam-gu">강남구</option>
+                        <option value="seacho-gu">서초구</option>
+                        <option value="jung-gu">중구</option>
+                    </optgroup>
+                    <optgroup label="경기도">
+                        <option value="seongnam-si">성남시</option>
+                        <option value="suwon-si">수원시</option>
+                        <option value="anyang-si">안양시</option>
+                    </optgroup>
+                </select>
+            </p>
+            <p>
+                <span>코멘트 : </span>
+                <!-- rows는 가로, cols는 세로로 적을 수 있는 글자의 수라고 생각하면 된다. -->
+                <textarea name="comment" placeholder="가입인사를 남겨주세요" cols="20" rows="5"></textarea>
+            </p>
+            <p>
+                <input type="submit" value="회원가입하기">
+                <input type="reset" value="다시작성하기">
+            </p>
+        </fieldset>
+    </form>
+</body>
+</html>
