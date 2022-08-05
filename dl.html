@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+        }
+        ol,ul,dl{
+            list-style: none;
+        }
+        dl{
+            width: 800px;
+            margin: 0 auto;
+        }
+        dl dt{
+            background-color: #ccc;
+            line-height: 100px;
+            font-size: 20px;
+            color: #333;
+            text-indent: 40px;
+            border-bottom: 2px solid #333;
+        }
+        dl dd{
+            background-color: #fff;
+            color: #333;
+            line-height: 100px;
+            border-bottom: 2px solid #333;
+            font-size: 20px;
+        }
+        dl dd span{
+            color: red;
+            font-weight: bold;
+            font-size: 30px;
+        }
+    </style>
+</head>
+<body>
+    <dl>
+        <dt>공지사항인데</dt>
+        <dd>좀 <span>잘</span> 좀읽어</span></dd>
+    </dl>
+    <dl>
+        <dt>자꾸 똑같은거 물어보지 말고</dt>
+        <dd>제발 <span>게시판을 보라고</span></span></dd>
+    </dl>
+    <dl>
+        <dt>고객센터에 전화를 하지말고</dt>
+        <dd><span>공지사항</span> 을 읽으라고</span></dd>
+    </dl>
+    <dl>
+        <dt>갑질하지마</dt>
+        <dd>나도 <span>가끔은</span> 눈물이... 주르륵..</span></dd>
+    </dl>
+
+    <!-- <script>
+        alert("똑바로좀 읽어");
+    </script> -->
+    <script>
+        confirm("똑바로 읽을거니?");
+    </script>
+</body>
+</html>
